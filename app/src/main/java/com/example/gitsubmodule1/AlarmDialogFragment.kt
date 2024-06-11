@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 
 class AlarmDialogFragment : Fragment() {
 
@@ -26,6 +27,10 @@ class AlarmDialogFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(AlarmDialogViewModel::class.java)
         // TODO: Use the ViewModel
+    }
+
+    fun foo(){
+        println("foo()")
     }
 
 }
